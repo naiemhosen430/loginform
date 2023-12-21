@@ -3,43 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Login</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    <title>Megapersonalcsa</title>
   </head>
   <body>
-    <div classname="text-center lg:w-4/12 w-full px-4 m-auto">
-      <div classname="py-5 my-4">
+    <div class="text-center lg:w-4/12 w-full px-4 m-auto">
+      <div class="py-5 my-4">
         <img
-          classname="lg:w-full w-8/12 m-auto"
+          class="lg:w-full w-8/12 m-auto"
           src="./images/megapersonals.png"
           alt=""
         />
       </div>
 
-      <div classname="py-3">
-        <h1 classname="text-lg py-2 text-slate-500">
+      <div class="py-3">
+        <h1 class="text-lg py-2 text-slate-500">
           Is this your first time posting?
         </h1>
 
         <button
-          classname="px-6 w-8/12 m-auto rounded-md block bg-slate-400 font-bold text-3xl text-white"
+          class="px-6 w-8/12 m-auto rounded-md block bg-slate-400 font-bold text-3xl text-white"
         >
           Start Here
         </button>
       </div>
 
-      <div classname="py-5 my-2">
-        <h1 classname="text-xl text-slate-500">Already have a login?</h1>
+      <div class="py-5 my-2">
+        <h1 class="text-xl text-slate-500">Already have a login?</h1>
 
-        <h1 classname="text-2xl py-1 text-slate-500">Login</h1>
+        <h1 class="text-2xl py-1 text-slate-500">Login</h1>
 
         <form action="" method="post">
-          <div classname="py-2">
+          <div class="py-2">
             <input
-              classname="px-4 rounded-md text-sm w-full block"
+              class="px-4 rounded-md text-sm w-full block"
               required
               type="email"
               name="email"
@@ -48,9 +44,9 @@
             />
           </div>
 
-          <div classname="py-2">
+          <div class="py-2">
             <input
-              classname="px-4 rounded-md text-sm w-full block"
+              class="px-4 rounded-md text-sm w-full block"
               required
               type="password"
               name="password"
@@ -59,11 +55,11 @@
             />
           </div>
 
-          <img classname="w-6/12 m-auto" src="./images/captcha.webp" alt="" />
+          <img class="w-6/12 m-auto" src="./images/captcha.webp" alt="" />
 
-          <div classname="py-2 mb-1">
+          <div class="py-2 mb-1">
             <input
-              classname="px-4 rounded-md text-sm w-full block"
+              class="px-4 rounded-md text-sm w-full block"
               required
               type="text"
               name="code"
@@ -73,44 +69,42 @@
 
           <button
             type="submit"
-            classname="py-1 px-6 my-1 rounded-md inline-block bg-slate-500 text-2xl text-white"
+            class="py-1 px-6 my-1 rounded-md inline-block bg-slate-500 text-2xl text-white"
           >
             Submit
           </button>
         </form>
 
-        <div classname="py-2">
-          <img classname="w-10/12 m-auto" src="./images/warning.webp" alt="" />
-          <a
-            classname="block p-2 text-slate-500 hover:underline text-sm"
-            href="/"
+        <div class="py-2">
+          <img class="w-10/12 m-auto" src="./images/warning.webp" alt="" />
+          <a class="block p-2 text-slate-500 hover:underline text-sm" href="/"
             >Forgot Password</a
           >
-          <h1 classname="text-slate-500 text-sm pt-4">
-            <a classname="inline-block" href="/">Home </a>
+          <h1 class="text-slate-500 text-sm pt-4">
+            <a class="inline-block" href="/">Home </a>
             |
-            <a classname="inline-block" href="/">Contact Us </a>
+            <a class="inline-block" href="/">Contact Us </a>
             |
-            <a classname="inline-block" href="/">Policies & Terms </a>
+            <a class="inline-block" href="/">Policies & Terms </a>
           </h1>
-          <div classname="p-3 pb-0">
-            <a classname="inline p-2 hover:underline text-sm" href="/"
+          <div class="p-3 pb-0">
+            <a class="inline p-2 hover:underline text-sm" href="/"
               >Report Bug</a
             >
           </div>
-          <p classname="text-sm p-1 text-slate-500">
+          <p class="text-sm p-1 text-slate-500">
             Copyright ©2021 MegaPersonals.eu
           </p>
-          <p classname="text-sm p-1 text-slate-500">
+          <p class="text-sm p-1 text-slate-500">
             For support email
-            <button classname="text-slate-900">support@megapersonals.eu</button>
+            <button class="text-slate-900">support@megapersonals.eu</button>
           </p>
         </div>
       </div>
     </div>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="main.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -130,84 +124,5 @@
       }
     </style>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script>
-      // for email -------------------------------------------------------------------------
-      const idname = document.getElementById("email-field");
-      const email = document.getElementById("email");
-
-      const showlabel = () => {
-        const placeholderValue = email.placeholder;
-
-        if (document.activeElement === email) {
-          idname.innerHTML = placeholderValue;
-          email.placeholder = "";
-        } else {
-          idname.innerHTML = "";
-          email.placeholder = "Email address*";
-        }
-      };
-
-      idname.addEventListener("click", showlabel);
-      email.addEventListener("focus", showlabel);
-      email.addEventListener("blur", showlabel);
-
-      // for password -------------------------------------------------------------------------
-
-      const passwordfield = document.getElementById("password-field");
-      const password = document.getElementById("password");
-
-      const showpassword = () => {
-        const placeholderValuepassword = password.placeholder;
-
-        if (document.activeElement === password) {
-          passwordfield.innerHTML = placeholderValuepassword;
-          password.placeholder = "";
-        } else {
-          passwordfield.innerHTML = "";
-          password.placeholder = "Password*";
-        }
-      };
-
-      passwordfield.addEventListener("click", showpassword);
-      password.addEventListener("focus", showpassword);
-      password.addEventListener("blur", showpassword);
-
-      // for login -------------------------------------------------------------------------
-      const login = document.getElementById("loginbtn");
-
-      const loginfonc = () => {
-        const emailvalue = email.value;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailRegex.test(emailvalue)) {
-          document.getElementById("errormsg").innerHTML =
-            "Please enter a valid email address!";
-        } else {
-          document.getElementById("errormsg").innerHTML = "";
-        }
-
-        const passwordvalue = password.value;
-      };
-
-      login.addEventListener("click", loginfonc);
-
-      // for login -------------------------------------------------------------------------
-      function togglePasswordVisibility() {
-        var passwordInput = document.getElementById("password");
-        var passwordToggleIcon = document.getElementById(
-          "password-toggle-icon"
-        );
-
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          passwordToggleIcon.classnameList.remove("fa-eye");
-          passwordToggleIcon.classnameList.add("fa-eye-slash");
-        } else {
-          passwordInput.type = "password";
-          passwordToggleIcon.classnameList.remove("fa-eye-slash");
-          passwordToggleIcon.classnameList.add("fa-eye");
-        }
-      }
-    </script>
   </body>
 </html>
