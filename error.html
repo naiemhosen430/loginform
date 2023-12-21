@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megapersonalcsa</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="lg:w-9/12 w-12/12 m-auto p-5">
+      <div class="py-5">
+        <h1 class="lg:text-6xl text-4xl font-thin">
+          Sorry, you have been blocked
+        </h1>
+
+        <h1 class="text-3xl text-slate-600 font-thin py-2">
+          You are unable to access megapersonals.eu
+        </h1>
+      </div>
+
+      <div class="text-center p-10">
+        <i class="fas fa-times-circle m-10 text-9xl"></i>
+      </div>
+
+      <div class="lg:flex">
+        <div class="lg:w-6/12 w-12/12 p-4">
+          <h1 class="text-3xl text-slate-700 py-2">Why have I been blocked?</h1>
+
+          <p class="text-sm text-slate-700 py-2">
+            This website is using a security service to protect itself from
+            online attacks. The action you just performed triggered the security
+            solution. There are several actions that could trigger this block
+            including submitting a certain word or phrase, a SQL command or
+            malformed data.
+          </p>
+        </div>
+
+        <div class="lg:w-6/12 w-12/12 p-4">
+          <h1 class="text-3xl text-slate-700 py-2">
+            What can I do to resolve this?
+          </h1>
+
+          <p class="text-sm text-slate-700 py-2">
+            You can email the site owner to let them know you were blocked.
+            Please include what you were doing when this page came up and the
+            Cloudflare Ray ID found at the bottom of this page.
+          </p>
+        </div>
+      </div>
+
+      <div class="p-2 text-sm mt-10 pt-5">
+        <p class="text-center">
+          Cloudflare Ray ID: 83916023eb164ea1 • Your IP:
+          <button class="text-red-400">Click to reveal</button>
+          • Performance & security by
+          <button class="text-red-400">Cloudflare</button>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </body>
+</html>
